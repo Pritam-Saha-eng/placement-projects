@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pritam Saha - personal portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(5, 2, 29);
+            color: white;
+            font-family: "Poppins", sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(25, 3, 66);
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+           color: rgb(133, 6, 126);
+        }
+        .left{
+            font-size: 1.5rem;
+        }
+        .firstSection{
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0;
+            align-items: center;
+        }
+        .leftSection{
+            
+            font-size: 2.2rem;
+            margin: 70px 0;
+        
+        }
+        .rightSection img{
+            width: 92%;
+            margin: 80px 0;
+            
+        }
+        .firstSection >div{
+            width: 30%;
+        }
+        .col{
+            color: rgb(111, 44, 173);
+        }
+        #element{
+            color: blueviolet;
+        }
+        .secondSection{
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+        main hr{
+            border: 0;
+            background: rgb(224, 203, 203);
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+        .secondSection h1{
+            font-size: 2rem;
+        }
+        .text-grey{
+            color: gray;
+        }
+        .secondSection .box{
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0; 
+            display: flex;
+        }
+        .secondSection .vertical{
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 125px;
+        }
+        .image-top{
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+        .vertical-title{
+            position: relative;
+            top: 75px;
+            width: 150px;
+        }
+        .vertical-desc{
+            position: relative;
+            top: 86px;
+            color: gray;
+            width: 150px;
+            font-size: 9px;
+
+        }
+        footer{
+            background-color: purple;
+            height: 233px;
+            
+        }
+        .footer{
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Pritam's PORTFOLIO</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class ="firstSection">
+            <div class ="leftSection">Hello, I am <span class="col">Pritam Saha</span>
+                <div>And i am a student of UEM, kolkata</div>
+                <span id="element"></span>
+            </div>
+
+            <div class="rightSection"><img src="back.png"></div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-grey">What i have done so far</span>
+            <h1>Work Experience</h1>
+            <div class="box"> 
+            <div class = "vertical">
+                <img class = "image-top"src="developer.png">
+                <div class = "vertical-title">
+                    Programming Languages
+                </div>
+                <div class ="vertical-desc">
+                    C, JAVA, Python
+                </div>
+            </div>
+            <div class = "vertical">
+                <img class = "image-top"src="developer.png">
+                <div class = "vertical-title">
+                    JAVA GAME DEV
+                </div>
+                <div class ="vertical-desc">
+                    Game dev with java, swing, JFrame
+                </div>
+            </div>
+            <div class = "vertical">
+                <img class = "image-top"src="developer.png">
+                <div class = "vertical-title">
+                    GEN-AI 
+                </div>
+                <div class ="vertical-desc">
+                    Currently learning Gen-AI 
+                </div>
+            </div>
+            <div class = "vertical">
+                <img class = "image-top"src="developer.png">
+                <div class = "vertical-title">
+                    WEB developement
+                </div>
+                <div class ="vertical-desc">
+                    frontend websites using html,css,java script
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Pritam's developer portfolio</h3>
+            </div>
+            <div class="footer-second"></div>
+            <div class="footer-third"></div>
+            <div class="footer-fourth"></div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['<i>C,JAVA</i>', '<i>Web developement</i>', '<i>JAVA GAME DEVELOPEMENT</i>'],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+</html>
